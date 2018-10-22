@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Shoes ON</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Search Icon - Font Awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">	
+
+	<!-- https://github.com/ioanaimb/WebAppFrontEnd -->
+</head>
+
+<body>
+
+<!-- HEADER -->
+	<header>
+		<div class="headertop">
+			<div class="container">	
+				<div class="search-container">
+					<form action="/action_page.php">
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit">
+      						<span style="color: white">
+      						<i class="fa fa-search"></i></span>
+      					</button>
+      				</form>
+				</div>
+				<div class="pages">
+      				<a href="sneakersmen.html">SNEAKERS MEN</a>
+  					<a href="sneakerswomen.html">SNEAKERS WOMEN</a>
+  				</div>
+			</div>
+		</div>
+		<div class="headerbottom">
+			<div class="container">
+				<a class="logo" href="index.html"><img src="./img/logo.png"></a>
+			</div>
+		</div>						
+	</header>
+
+
+<!-- SLIDESHOW -->
+
+	<div class="slideshow-container">
+
+  
+  		<div class="mySlides fade">
+    		<div class="numbertext">1 / 3</div>
+    		<img src="img/carousel/ADIDAS_PERFORMANCE_ULTRABOOST_CAROUSEL.jpg" style="width:100%">
+   			 <div class="text">Caption Text</div>
+  		</div>
+
+  		<div class="mySlides fade">
+   			 <div class="numbertext">2 / 3</div>
+   			 <img src="img/carousel/JORDAN_CAROUSEL.jpg" style="width:100%">
+    		<div class="text">Caption Two</div>
+ 		 </div>
+
+  		<div class="mySlides fade">
+    		<div class="numbertext">3 / 3</div>
+   			 <img src="img/carousel/NIKE_AIR_MAX_1_PREMIUM_CAROUSEL.jpg" style="width:100%">
+   			 <div class="text">Caption Three</div>
+  		</div>
+
+ 	 <!-- Next and previous buttons -->
+ 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+
+<!-- POPULAR BRANDS -->
+
+
+	<div class="containerbrands">
+		<div class="responsive">
+  			<div class="gallery">
+     	 		<img src="img/brands/adidas.jpg" alt="Cinque Terre" width="600" height="400">
+  			</div>
+		</div>
+
+
+		<div class="responsive">
+  			<div class="gallery">
+      			<img src="img/brands/puma.jpg" alt="Forest" width="600" height="400">
+  			</div>
+		</div>
+
+		<div class="responsive">
+  			<div class="gallery">
+      			<img src="img/brands/nike.jpg" alt="Northern Lights" width="600" height="400">
+  			</div>
+		</div>
+
+		<div class="responsive">
+  			<div class="gallery">
+      			<img src="img/brands/jordan.jpg" alt="Mountains" width="600" height="400">
+  			</div>
+		</div>
+
+		<div class="responsive">
+  			<div class="gallery">
+      			<img src="img/brands/lecoqsportif.jpg" alt="Mountains" width="600" height="400">
+  			</div>
+		</div>
+
+		<div class="responsive">
+  			<div class="gallery">
+      			<img src="img/brands/vans.jpg" alt="Mountains" width="600" height="400">
+  			</div>
+		</div>
+	</div>
+
+	
+<!-- SUBSCRIBE -->
+
+		<section id="subscribe">
+			<div class="container">
+				<h1>SUBSCRIBE FOR LATEST RELEASES & OFFERS!</h1>
+				<form action="php/register.php" method="post">
+					<input type="email" placeholder="Enter email address" name="subscribe">	
+					<button type="submit" class="subscribebutton">Subscribe</button>
+				</form>
+			</div>
+		</section>
+
+<!-- FOOTER -->
+
+	<footer>
+		<p>ShoesOn, Copyright &copy; 2018</p>
+	</footer>
+		
+</body>
+
+	<script src="js/myScript.js"></script>
+</html>
